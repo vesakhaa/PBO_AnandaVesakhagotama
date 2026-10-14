@@ -2,17 +2,25 @@ public class Pegawai {
     public String nip;
     public String nama;
     public double gaji;
-    
+
+    // Constructor default (tanpa parameter)
     public Pegawai() {
         System.out.println("Ini constructor class Pegawai");
     }
 
+    // Constructor berparameter (Overloading constructor)
+    public Pegawai(String nip, String nama, double gaji) {
+        this.nip = nip;
+        this.nama = nama;
+        this.gaji = gaji;
+    }
+
+    // Method untuk mendapatkan informasi pegawai
     public String getInfo() {
         String info = "";
-        info += "NIP: " + this.nip + "\n";
-        info += "Nama: " + this.nama + "\n";
-        info += "Gaji: " + this.gaji + "\n";
-        
+        info += "NIP   : " + nip + "\n";
+        info += "Nama  : " + nama + "\n";
+        info += "Gaji  : " + gaji + "\n";
         return info;
     }
 }
