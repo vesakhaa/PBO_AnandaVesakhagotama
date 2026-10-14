@@ -2,11 +2,10 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        // Instansiasi objek MenuKopi
         MenuKopi kopi1 = new MenuKopi(1, "Espresso", "Kopi hitam dengan beans arabica", 18000, 20);
         MenuKopi kopi2 = new MenuKopi(2, "Caramel Macchiato", "Kopi susu dengan sirup karamel", 28000, 15);
+        MenuKopi kopi3 = new MenuKopi(3, "Cappuccino", "Kopi susu dengan busa susu", 25000, 10);
 
-        // Instansiasi DetailPesanan
         DetailPesanan detail1 = new DetailPesanan(101, kopi1, 2);
         DetailPesanan detail2 = new DetailPesanan(102, kopi2, 1);
 

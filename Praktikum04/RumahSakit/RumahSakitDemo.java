@@ -16,5 +16,8 @@ public class RumahSakitDemo {
 
         Pasien pasien2 = new Pasien("997744", "Yenny Anggraeni");
         System.out.println(pasien2.getInfo());
+
+        ani.setNip("1111");
+        System.out.println("NIP baru dr. Ani: " + ani.getNip());
     }
 }
