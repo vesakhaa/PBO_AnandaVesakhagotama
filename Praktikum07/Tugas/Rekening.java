@@ -1,15 +1,13 @@
 public class Rekening {
     public String noRekening;
     public String namaPemilik;
-    protected double saldo;  // Menggunakan protected sesuai simbol '#' di diagram
+    protected double saldo;
     public double bunga;
 
-    // 1. Constructor tanpa parameter (Overloading)
     public Rekening() {
         System.out.println("Constructor default Rekening dibuat");
     }
 
-    // 2. Constructor berparameter (Overloading)
     public Rekening(String noRekening, String namaPemilik, double saldo, double bunga) {
         this.noRekening = noRekening;
         this.namaPemilik = namaPemilik;
@@ -18,7 +16,7 @@ public class Rekening {
     }
 
     public void tarikSaldo(double jumlah) {
-        if(saldo >= jumlah) {
+        if (saldo >= jumlah) {
             saldo -= jumlah;
             System.out.println("Penarikan Rp " + jumlah + " berhasil.");
         } else {
@@ -31,7 +29,6 @@ public class Rekening {
         System.out.println("Setor saldo Rp " + jumlah + " berhasil.");
     }
 
-    // Method ini dibuat untuk mendemonstrasikan Overriding di subclass
     public String cetakInfo() {
         String info = "No Rekening  : " + noRekening + "\n";
         info += "Nama Pemilik : " + namaPemilik + "\n";
