@@ -13,7 +13,9 @@ public class Lebah extends Hewan {
         System.out.println("Mergepakkan sayap ke belakang");
     }
 
-    /** (non-Javadoc)
+    /**
+     * (non-Javadoc)
+     * 
      * @see Hewan#bernafas()
      */
     @Override
@@ -24,7 +26,7 @@ public class Lebah extends Hewan {
     }
 
     @Override
-    public void cetakInfo(){
+    public void cetakInfo() {
         super.cetakInfo();
         System.out.println("Kasta : " + this.kasta);
     }

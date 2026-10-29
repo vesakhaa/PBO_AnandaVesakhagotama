@@ -1,4 +1,4 @@
-public class Rekening {
+public abstract class Rekening {
     public String noRekening;
     public String namaPemilik;
     protected double saldo;
@@ -29,11 +29,5 @@ public class Rekening {
         System.out.println("Setor saldo Rp " + jumlah + " berhasil.");
     }
 
-    public String cetakInfo() {
-        String info = "No Rekening  : " + noRekening + "\n";
-        info += "Nama Pemilik : " + namaPemilik + "\n";
-        info += "Saldo        : Rp " + saldo + "\n";
-        info += "Bunga        : " + bunga + "%\n";
-        return info;
-    }
+    public abstract String cetakInfo();
 }

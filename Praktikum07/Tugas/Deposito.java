@@ -16,7 +16,11 @@ public class Deposito extends Rekening {
 
     @Override
     public String cetakInfo() {
-        String info = super.cetakInfo();
+        String info = "--- INFO TABUNGAN ---\n";
+        info += "No Rekening  : " + noRekening + "\n";
+        info += "Nama Pemilik : " + namaPemilik + "\n";
+        info += "Saldo        : Rp " + saldo + "\n";
+        info += "Bunga        : " + bunga + "%\n";
         info += "Tenor        : " + tenor + " Bulan\n";
         return info;
     }

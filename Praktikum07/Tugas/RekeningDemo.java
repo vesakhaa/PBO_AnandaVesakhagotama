@@ -14,11 +14,6 @@ public class RekeningDemo {
 
         System.out.println("\n-----------------------------------\n");
 
-        Tabungan tabungan2 = new Tabungan("1234567890", "Lepi", 1000000, 1.5, 10000);
-        System.out.println(tabungan2.cetakInfo());
-        tabungan2.tarikSaldo(200000);
-        tabungan2.hitungBunga();
-        System.out.println("\n");
-        System.out.println(tabungan2.cetakInfo());
+        Rekening rekening1 = new Rekening();
     }
 }
