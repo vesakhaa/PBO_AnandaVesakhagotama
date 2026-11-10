@@ -9,12 +9,22 @@ public class Demo {
         TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
         TenagaKependidikan tendik2 = new TenagaKependidikan("19650304", "Tika S.T.", "Tenaga Labolatorium");
 
-        ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>();
-        daftarPegawai.add(dosen1);
-        daftarPegawai.add(dosen2);
-        daftarPegawai.add(tendik1);
-        daftarPegawai.add(tendik2);
+        // ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>();
+        // daftarPegawai.add(dosen1);
+        // daftarPegawai.add(dosen2);
+        // daftarPegawai.add(tendik1);
+        // daftarPegawai.add(tendik2);
 
-        System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
+        // System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
+        Pegawai pegawai1 = dosen1;
+
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
+        pegawai1.displayInfo();
+
+        Dosen newDosen = (Dosen) pegawai1;
+        System.out.println(newDosen.nama);
+        System.out.println(newDosen.nidn);
+        newDosen.mengajar();
     }
 }
